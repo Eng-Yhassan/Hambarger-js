@@ -19,48 +19,55 @@
 
         <div class="sm:flex hidden gap-[170px] items-center">
 
-            <ul class="flex gap-[20px] text-[22px] mr-[301px]">
+            <ul class="flex gap-[20px] text-[22px] mr-[301px] sm:mr-0">
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact us</li>
             </ul>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping relative md:mr-7"><span id="Cart_incriment"
+                    class="absolute -top-3 ">(0)</span></i>
         </div>
-        <i id="Dropdown" class="fa-solid fa-bars-staggered sm:hidden text-[22px]"></i>
+        <i id="Dropdown" class="fa-solid fa-bars-staggered sm:hidden md:hidden text-[22px]"></i>
         <i id="x_mark" class="fa-solid fa-xmark sm:hidden hidden text-[22px]"></i>
     </div>
 
 
 
     <!-- Dropdown -->
-    <div id="Dropdown_pages" class="sm:hidden hidden items-center bg-yellow-800 text-white text-center space-y-8 -mt-1 py-3">
+    <div id="Dropdown_pages"
+        class="sm:hidden hidden items-center bg-yellow-800 text-white text-center space-y-8 -mt-1 py-3">
 
         <ul class=" gap-[20px] text-[22px] space-y-8">
             <li>Home</li>
             <li>About</li>
             <li>Contact us</li>
         </ul>
-        
+        <i class="fa-solid fa-cart-shopping relative"><span id="Cart_incriment_Drop" class="absolute -top-3">(0)</span></i>
+
     </div>
 
     <!-- Hero -->
-    <div class="flex justify-evenly mt-[120px]">
+    <div class="flex sm:flex-row flex-col  justify-evenly sm:mt-[120px] mt-[90px] sm:ml-0 ml-[20px] mb-[10px]">
         <!-- left -->
-        <div class="w-[40%] mt-[30px]">
+        <div class="sm:w-[40%] md:w-[43%] w-[80%] sm:mt-[30px] md:mt-0">
 
-            <h1 class="text-[30px] font-semibold mb-[30px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h1 class="text-[30px] font-semibold sm:mb-[30px] mb-[22px]">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
                 Soluta, accusantium!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur, quod ipsum dolor,
                 mollitia
                 debitis repellendus quidem, deserunt nostrum pariatur eius architecto obcaecati ea consectetur corporis
                 tenetur. Minus, eum consectetur!</p>
-            <button class="mt-[40px] bg-yellow-800 text-white px-[14px] py-[10px] rounded-[4px]">Explore More</button>
+            <button id="Explore_More"
+                class="sm:mt-[40px] mt-[22px] bg-yellow-800 text-white px-[14px] py-[10px] rounded-[4px]">Explore
+                More</button>
 
         </div>
         <!-- Right -->
 
         <div>
-            <img src="./images/images (1).jpg" alt="" class="w-[500px] rounded-[4px]">
+            <img src="./images/images (1).jpg" alt=""
+                class="sm:w-[500px] md:w-[400px] w-[280px] sm:mt-0 mt-[20px] rounded-[4px] md:mt-[30px]">
         </div>
 
     </div>
